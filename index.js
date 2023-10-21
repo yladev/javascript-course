@@ -61,3 +61,16 @@ console.log(boys);
 
 let result = 1 + 2 * (3 + 4);
 console.log(result);
+
+// How to accept user input
+
+// Easy Way with a window prompt
+let username = window.prompt("What's your name?");
+console.log(username);
+
+// DIFFICULT WAY HTML textbox
+document.getElementById("myButton").onclick = function () {
+  const name = document.getElementById("myText").value;
+  console.log("This is user input name => " + name);
+  document.getElementById("myLabel").innerHTML = "Hello " + name;
+};
