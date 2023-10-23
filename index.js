@@ -74,3 +74,23 @@ document.getElementById("myButton").onclick = function () {
   console.log("This is user input name => " + name);
   document.getElementById("myLabel").innerHTML = "Hello " + name;
 };
+
+// Type Conversion = change the datatype of a value to another
+//                   (string, numbers, booleans)
+let Age = window.prompt("How old are you?");
+console.log(typeof Age);
+Age = Number(Age);
+Age += 1;
+console.log("Happy Birthday! You are", Age, "years old");
+
+let x;
+let y;
+let z;
+
+x = Number("3.14");
+y = String(3.14);
+z = Boolean("");
+
+console.log(x, typeof x);
+console.log(y, typeof y);
+console.log(z, typeof z);
